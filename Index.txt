@@ -1,453 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-489TC1HG2G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Online | Chipworks LLC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+    }
+    header {
+      background: #002b5c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header img {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    h2 {
+      color: #002b5c;
+      border-bottom: 2px solid #e94e1b;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .service-box {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .service-box h3 {
+      margin-top: 0;
+      color: #002b5c;
+    }
+    .service-box p {
+      margin: 8px 0;
+    }
+    .book-btn {
+      display: inline-block;
+      background: #e94e1b;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .certifications {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .certifications img {
+      height: 80px;
+      margin: 10px 20px;
+    }
+    footer {
+      background: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
 
-  gtag('config', 'G-489TC1HG2G');
-</script>
-<!-- Google tag (gtag.js) (from google ads) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-244302052-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<header>
+  <img src="chipworks-logo.png" alt="Chipworks LLC Logo">
+  <h1>Book Online</h1>
+  <p>Schedule your mobile windshield repair or headlight restoration</p>
+</header>
 
-  gtag('config', 'UA-244302052-1');
-</script>
-      <!-- old Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10999295429"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<div class="container">
 
-  gtag('config', 'AW-10999295429');
-</script>
+  <h2>Choose a Service</h2>
 
-<!-- Event snippet for pageView conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-10999295429/K7a-CPy65Y8YEMXb7_wo'});
-</script>
+  <div class="service-box">
+    <h3>Rock Chip Repair — $60</h3>
+    <p>Repair for a single windshield chip smaller than a quarter.</p>
+    <p><strong>Additional chips:</strong> $20 each</p>
+    <a class="book-btn" href="sms:7013359217">Book by Text</a>
+  </div>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Boulder Chip Repair offers professional windshield chip repair in Boulder, Colorado"
-    />
-    <meta
-      name="keywords"
-      content="windshield repair, windshield chip repair, chip repair, rock chip repair, windshield rock chip, windshield crack repair, windshield crack, windshield fix, boulder winshield repair"
-    />
-    <meta name="author" content="Boulder Chip Repair" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="chip2.png" />
-    <title>Boulder Chip Repair</title>
-  </head>
-  <body>
+  <div class="service-box">
+    <h3>Headlight Restoration — $120</h3>
+    <p>Full restoration to improve clarity, brightness, and nighttime visibility.</p>
+    <a class="book-btn" href="sms:7013359217">Book by Text</a>
+  </div>
 
-    <div class="mobile-menu">
-      <img src="./close-x.svg" class="close-menu" alt="close-button" />
-      <a href="#book-online"><button class="btn btn-mobile">Book Online</button></a>
-      <a href="#services"><button class="btn btn-mobile">Services</button></a>
-      <a href="#faq"><button class="btn btn-mobile">FAQs</button></a>
-      
-    </div>  
+  <div class="service-box">
+    <h3>Mobile Service</h3>
+    <p>We come to your home, work, or wherever your vehicle is parked.</p>
+    <p>Most repairs take 15–20 minutes.</p>
+    <a class="book-btn" href="tel:7013359217">Call to Schedule</a>
+  </div>
 
-    <header id="top">
-      <div class="header-div">
-        <img class="logo" src="bcr-logo-color.png" alt="boulder chip repair logo" />
-        <div class="title-container">
-          <h2>fast &nbsp - &nbsp durable &nbsp - &nbsp affordable</h2>
-          <a href="#book-online"><button class="btn">Book Online</button></a>
-          <a href="#services"><button class="btn">Services</button></a>
-          <a href="#faq"><button class="btn">FAQs</button></a>
-          
-        </div>
-        <div class="locally-owned">
-          <p class="phone-text">720.443.1516</p>
-          <!-- <p class="phone-text-call">text | call</p> -->
-          <div class="phone-div">
-             <a href="tel:7204431516"
-              ><img class="phone-icon" src="./phone-icon.svg" alt="call us" title="Call"
-            /></a>
-            <a href="sms:7204431516"
-              ><img class="text-icon" src="./text-icon.svg" alt="text us" title="Text"
-            /></a>
-           
-            <a href="#book-online"
-              ><img class="book-icon" src="./calendar.svg" alt="book online" title="Book Online"
-            /></a>
-            <!-- <p>Locally Owned & Operated</p> -->
-          </div>
-        </div>
-        <img class="hamburger-menu" src="./hamburger-menu.svg" alt="mobile menu"/>
-       
-      </div>
-    </header>
-    <!--<section class="quote-overlay">-->
-    <!--  <div class="quote-overlay-inner">-->
-    <!--    <img src="./close-x.svg" class="close-x" alt="close-button" />-->
-    <!--    <div class="quote-overlay-text-div">-->
-    <!--      <h2>Get a Quote</h2>-->
-    <!--      <h3>windshield chip repair made easy</h3>-->
-    <!--      <p>-->
-    <!--        For a quick quote, simply text or call <span>720.443.1516</span>-->
-    <!--        <br />-->
-    <!--        If possible, include an image of the windshield chip.-->
-    <!--      </p>-->
-    <!--      <br />-->
-    <!--      <p>-->
-    <!--        Most small rock chips cost $65-$70 to repair,<br />-->
-    <!--        and only take about 20-30mins to complete.<br />-->
-    <!--      </p>-->
-    <!--      <br />-->
-    <!--      <p>You can also fill this form and we will get back to you ASAP</p>-->
-    <!--      <form-->
-    <!--        action="contactform.php"-->
-    <!--        method="POST"-->
-    <!--        class="contact-container"-->
-    <!--      >-->
-    <!--        <div class="input-box">-->
-    <!--          <input-->
-    <!--            placeholder="Name"-->
-    <!--            type="text"-->
-    <!--            id="name"-->
-    <!--            name="name"-->
-    <!--            required-->
-    <!--          />-->
-    <!--          <input-->
-    <!--            placeholder="Vehicle"-->
-    <!--            type="text"-->
-    <!--            id="vehicle"-->
-    <!--            name="vehicle"-->
-    <!--            required-->
-    <!--          />-->
-    <!--          <input-->
-    <!--            placeholder="Email"-->
-    <!--            type="text"-->
-    <!--            id="email"-->
-    <!--            name="email"-->
-    <!--            required-->
-    <!--          />-->
-    <!--          <input placeholder="Phone" type="text" id="phone" name="phone" />-->
-    <!--          <input-->
-    <!--            placeholder="Comments"-->
-    <!--            type="text"-->
-    <!--            id="comments"-->
-    <!--            name="comments"-->
-    <!--          />-->
-    <!--          <button type="submit" class="btn">Submit</button>-->
-    <!--        </div>-->
-    <!--      </form>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--</section>-->
-     <!-- ******** Hero Section ******** -->
-    <section class="main-section">
-    <div class="hero-div">
-      <div class="title-counter-div">
-        <h1>
-          Professional Windshield
-          <span>Rock Chip & Crack Repair</span>
-        </h1>
-        <p class="hero-subtitle">Restore clarity and safety to your drive with fast, affordable windshield chip and crack repair. 
-          Stop damage in its tracks before it spreads — same-day service available!</p>
-        <div class="hero-btns">
-          <a href="tel:7204431516"><button class="btn">Call Us<img class="phone-icon" src="./phone-icon.svg" alt="call us" title="Call"
-            /></button></a>
-          <a href="sms:7204431516"><button class="btn">Text Us<img class="text-icon" src="./text-icon.svg" alt="text us" title="Text"
-            /></button></a>
-        </div>
-        <div class="count-container">
-          <div class="counter-img"></div>
-          <div class="years">
-            <p>
-              Years of <br />
-              Experience<br />
-            </p>
-            <span class="years-count" data-years="12">0</span>
-          </div>
-          <div class="repairs">
-            <p>
-              Repairs <br />
-              Completed<br />
-            </p>
-            <span class="repairs-count" data-repairs="1250">0</span>
-          </div>
-          <div class="customers">
-            <p>
-              Happy <br />
-              Customers<br />
-            </p>
-            <span class="customers-count" data-customers="540">0</span>
-          </div>
-        </div>
-      </div>
-      <img src="./repair-bridge.png" class="img-repair-bridge" alt="chip-repair-bridge" />
-    </div>
-    </section>
-    <section>
-      <div class="suppliers-logos">
-        <img src="./suppliers-logo.jpg" alt="suppliers logo" />
-      </div>
-      <div class="suppliers-logos-mbl">
-        <img src="./suppliers-logos-mbl.png" alt="suppliers logo" />
-      </div>
-    </section>
-     <!-- ******** Services Section ******** -->
-    <section class="services-sec" id="services">
-      <div class="services-div">
-        <h2>Our Services</h2>
-        <p class="services-subtitle">Integrity, expertise, professionalism - that’s what sets us apart. 
-          With your safety in mind, we strictly follow the ROLAGS and NWRD industry guidelines for windshield repair</p>
-        <div class="icons-div">
-          <div class="service-card">
-          <h3>Rock Chip Repair</h3>
-          <p class="service-description">Most chips smaller than a quarter coin are repairable! Using the best resins,
-             we don't just fill - we rebond the glass, restoring its strength to prevent future cracking.</p>
-          <div class="card-chip card">
-             <img src="./rock-chip.jpg" alt="rock chip" />
-          </div>
-          <p class="price-text">starting at <span>$65</span></p>
-        </div>
-        <div class="service-card">
-           <h3>Crack Repair</h3>
-            <p class="service-description">We repair cracks that others can’t - many cracks under 14” may still be repairable, saving you time and money on windshield replacement. 
-            </p>
-          <div class="card-wash card">
-            <img src="./crack-repair.jpg" alt="crack repair" />
-          </div>
-          <p class="price-text">starting at <span>$95</span></p>
-        </div>
-          <div class="service-card">
-            <h3>Headlight Restoration</h3>
-            <p class="service-description">Restore clarity to your vehicle’s headlights with our headlight restoration service,
-               improving visibility and enhancing your car’s appearance.</p> 
-          <div class="card-headlight card">
-            <img src="./headlights.jpg" alt="headlight-restoration" />
-          </div>
-          <p class="price-text">starting at <span>$110</span></p>
-        </div>
-        </div>
-      </div>
+  <div class="certifications">
+    <img src="delta-kits.png" alt="Delta Kits Certified Technician">
+    <img src="nwrd.png" alt="NWRD Certification">
+    <p>Certified Windshield Repair Technician — Delta Kits & NWRD (Auto Glass Safety Council)</p>
+  </div>
 
-      <svg class="svg-line" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path d="
-        M45,0
-        L68,30
-        C50,50,55,50,70,75
-        L67,78
-        C50,70,40,80,53,97
-        L50,100
-        C30,75,30,60,57,68
-        L35,40
-        Q60,25,38,0
-        Z
-        "></path>
-        </svg>
-    </section>
-    <!-- ******** Testimonials Section ******** -->
-    <section class="testimonials-sec">
-      <h2>Testimonials</h2>
-      <p class="test-subtitle">Real customers, real reviews - we never buy testimonials. See our <a href="https://www.google.com/search?q=boulder+chip+repair&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQkxNDIwajBqMTWoAgiwAgHxBSJ-dLyQkuAI&sourceid=chrome&ie=UTF-8#mpd=~14708874333693568513/customers/reviews" target="_blank">Google reviews</a></p>
-      <div class="testimonials-div">
-        <div class="test-card">
-          <div class="text-stars-div">
-            <p class="test-text">
-              Had 2 chips fixed in last month. Now cannot find traces of any
-              damage even knowing where they were. Outstanding knowledge &
-              craftsmanship. Reasonable prices. Convenient location. What more
-              could you ask for?
-            </p>
-            <img
-              src="./5stars.png"
-              alt="google five star reviews"
-              class="five-stars"
-            />
-          </div>
-          <p class="name">R M</p>
-        </div>
-        <div class="test-card">
-          <div class="text-stars-div">
-            <p class="test-text">
-              Solid, fast, friendly service at a reasonable price. Called and
-              had my windshield fixed within 30 minutes. Highly recommend!
-            </p>
-            <img
-              src="./5stars.png"
-              alt="google five star reviews"
-              class="five-stars"
-            />
-          </div>
-          <p class="name">Green Market</p>
-        </div>
-        <div class="test-card">
-          <div class="text-stars-div">
-            <p class="test-text">
-              I had several chips in my windshield and Boulder Chip Repair was
-              able to repair them in a very professional, courteous and timely
-              manner. Great service!
-            </p>
-            <img
-              src="./5stars.png"
-              alt="google five star reviews"
-              class="five-stars"
-            />
-          </div>
-          <p class="name">Timothy J</p>
-        </div>
-        <div class="test-card">
-          <div class="text-stars-div">
-            <p class="test-text">
-              The very reason you search for an independent businessman. Itay is
-              personable, thorough, competent and explains everything.
-            </p>
-            <img
-              src="./5stars.png"
-              alt="google five star reviews"
-              class="five-stars"
-            />
-          </div>
-          <p class="name">Dave S</p>
-        </div>
-        <div class="test-card">
-          <div class="text-stars-div">
-            <p class="test-text">
-              Great experience! Itay worked quickly, and I am very satisfied
-              with the quality and price of my chip repair. Highly recommend!!
-            </p>
-            <img
-              src="./5stars.png"
-              alt="google five star reviews"
-              class="five-stars"
-            />
-          </div>
-          <p class="name">Ella G</p>
-        </div>
-      </div>
-    </section>
-     <!-- ******** FAQs Section ******** -->
-    <section class="faq-sec" id="faq">
-     <div class="faq-container">
-      <div class="faq-div">
-        <h2>Frequantly Asked Questions</h2>
-        <div class="q1">
-          <details>
-            <summary>How much does an average chip repair cost?</summary>
-            <p>
-              Most small rock chips are smaller than a nickle coin and cost
-              between $65-$75 to repair.
-            </p>
-          </details>
-        </div>
-        <div class="q2">
-          <details>
-            <summary>
-              How long does it take to repair a windshield chip?
-            </summary>
-            <p>
-              Most rock chips take less than 30 minutes to repair. That
-              includes prepping the area, injecting and curing resin.
-            </p>
-          </details>
-        </div>
-        <div class="q3">
-          <details>
-            <summary>
-              Do I need to bring my car to your shop, or do you offer mobile
-              service also?
-            </summary>
-            <p>
-              We offer mobile service around the Boulder area. Please note that
-              an additional fee will apply, depending on distance traveled.
-            </p>
-          </details>
-        </div>
-        <div class="q7">
-          <details>
-            <summary>Where is Boulder Chip Repair located?</summary>
-            <p>
-              We are located close to downtown Boulder, at 1905 1/2 3rd Street.
-              Our shop is inside of the Buffs carwash (on the west side of the
-              wash).
-            </p>
-          </details>
-        </div>
-        <div class="q4">
-          <details>
-            <summary>Can you bill my auto insurance directly?</summary>
-            <p>
-              Currently, we are unable to directly bill insurance companies.
-              However, we can provide you with a business receipt that you can
-              submit to your insuracne company.
-            </p>
-          </details>
-        </div>
-        <div class="q5">
-          <details>
-            <summary>
-              How can I know if my windshield chip will crack more?
-            </summary>
-            <p>
-              Unfortunately, there is no way to tell for certain if and when a
-              rock chip will crack and spread. Each chip is different and there
-              are different variables that may affect it (size, location on
-              windshield, tempature, depth, etc.)
-            </p>
-          </details>
-        </div>
-        <div class="q6">
-          <details>
-            <summary>
-              Should I make an appointment, do you take walk-ins?
-            </summary>
-            <p>
-              Best way to schedule a quick repair is by making an appointment,
-              by text or call to 720.443.1516. Most times, we can schedule you
-              for same-day service.
-            </p>
-          </details>
-        </div>
+</div>
 
-        <div class="hero-btns">
-          <a href="tel:7204431516"><button class="btn">Call Us<img class="phone-icon" src="./phone-icon.svg" alt="call us" title="Call"
-            /></button></a>
-          <a href="sms:7204431516"><button class="btn">Text Us<img class="text-icon" src="./text-icon.svg" alt="text us" title="Text"
-            /></button></a>
-        </div>
-        
-      </div>
-      <img class="img-faqs" src="./faqs.jpg" alt="sport car">
-    </div>
-    </section>
-     <!-- ******** Book Online Section ******** -->
-    <section>
-      <div id="book-online" class="square-booking">
-       <h2>Book an Appointment</h2>
-       <p>Please include a valid phone number - we will call you to confirm your appointment</p> 
-   <!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oMcCYbwG8Zj6p5-ssMNvLoZc6aGmZ1oEl0kD1U_tqMmXrxSFUSvl0ZLeTRc57Jj5k2so9YN8B?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-<!-- end Google Calendar Appointment Scheduling -->
-      </div>
-    </section>
-    <!-- ******** Footer ******** -->
-    <footer>
-      <div class="footer-div">
-        <a href="#top"><img src="./chevron-up.svg" class="to-top" alt="scroll to top"></a> 
-        <p class="copyrights-text">© 2025 Boulder Chip Repair LLC &nbsp
-        <a href="https://rvn.digital" target="_blank"
-          >| &nbsp website by Raven Digital</a
-        ></p>
-      </div>
-    </footer>
-    <script src="./js.js"></script>
-  </body>
+<footer>
+  <p>Chipworks LLC — Mobile Windshield Repair & Headlight Restoration</p>
+  <p>Mandan / Bismarck, North Dakota</p>
+</footer>
+
+</body>
 </html>
