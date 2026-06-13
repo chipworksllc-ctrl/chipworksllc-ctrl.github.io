@@ -95,4 +95,122 @@
     color: #0f5e2b;
     margin-top: 60px;
     margin-bottom: 10px;
-    border-bottom: 3px solid #1fae4
+    border-bottom: 3px solid #1fae4a;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .service-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .service-box {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    width: 300px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+
+  .service-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+
+  .service-price {
+    font-weight: bold;
+    color: #1fae4a;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0f5e2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <img src="Business logo.jpeg" alt="Chipworks LLC Logo">
+    <strong>Chipworks LLC — Owner Operator Chris Hauge</strong>
+  </div>
+
+  <div class="header-right">
+    <a href="tel:7013359217">Call</a>
+    <a href="sms:7013359217">Text</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Professional Windshield Rock Chip Repair & Headlight Restoration</h1>
+  <p>Certified repair services following NWRD & ROLAGS standards. Restore safety, clarity, and visibility.</p>
+
+  <div class="cta-buttons">
+    <a href="tel:7013359217">Call Now</a>
+    <a href="sms:7013359217">Text a Photo</a>
+  </div>
+</section>
+
+<!-- SERVICES TITLE -->
+<div style="text-align:center;">
+  <h2 id="services" class="services-title">Services</h2>
+</div>
+
+<p style="text-align:center; font-size:1rem; margin-top:-10px; color:#0f5e2b;">
+  Following NWRD & ROLAGS Standards
+</p>
+
+<!-- SERVICES GRID -->
+<div class="service-container">
+
+  <div class="service-box">
+    <h3>Rock Chip Repair</h3>
+    <p>Most chips smaller than a quarter coin are repairable. We rebond the glass to restore strength and prevent cracking.</p>
+    <img src="Business Suite_creation_999341176158779.jpeg" alt="Rock Chip Repair">
+    <p class="service-price">$60</p>
+  </div>
+
+  <div class="service-box">
+    <h3>Additional Rock Chips</h3>
+    <p>More than one chip? Each additional chip is only <strong>$20</strong> during the same visit.</p>
+    <img src="20260525_130020.jpg" alt="Additional Chips">
+    <p class="service-price">$20</p>
+  </div>
+
+  <div class="service-box">
+    <h3>Headlight Restoration</h3>
+    <p>Improve nighttime visibility and restore clarity with our professional headlight restoration service.</p>
+    <img src="20260610_125122.jpg" alt="Headlight Restoration">
+    <p class="service-price">$120</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  Chipworks LLC — Mobile Windshield Rock Chip Repair & Headlight Restoration  
+  <br>Mandan / Bismarck, North Dakota
+</footer>
+
+</body>
+</html>
