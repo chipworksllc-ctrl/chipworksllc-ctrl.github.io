@@ -1,125 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Online | Chipworks LLC</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #222;
-    }
-    header {
-      background: #002b5c;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header img {
-      height: 100px;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    h2 {
-      color: #002b5c;
-      border-bottom: 2px solid #e94e1b;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-    .service-box {
-      background: white;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-    }
-    .service-box h3 {
-      margin-top: 0;
-      color: #002b5c;
-    }
-    .service-box p {
-      margin: 8px 0;
-    }
-    .book-btn {
-      display: inline-block;
-      background: #e94e1b;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .certifications {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .certifications img {
-      height: 80px;
-      margin: 10px 20px;
-    }
-    footer {
-      background: #002b5c;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chipworks LLC | Professional Windshield Rock Chip Repair</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f4;
+    color: #1a1a1a;
+  }
+
+  /* HEADER */
+  header {
+    background: #0f5e2b;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-left img {
+    height: 55px;
+  }
+
+  .header-center a {
+    background: #1fae4a;
+    padding: 10px 22px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  }
+
+  .header-right {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header-right a {
+    background: #1fae4a;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1fae4a, #0f5e2b);
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .cta-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cta-buttons a {
+    background: white;
+    color: #0f5e2b;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* BEFORE & AFTER */
+  .before-after {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .before-after img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+
+  /* CERTIFICATIONS */
+  .certs {
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .certs img {
+    height: 80px;
+    margin: 10px 20px;
+  }
+
+  /* SERVICES SECTION */
+  .services-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #0f5e2b;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1fae4a;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .service-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-box {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    width: 320px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  }
+
+  .service-box h3 {
+    margin-top: 0;
+    color: #0f5e2b;
+    font-size: 1.3rem;
+  }
+
+  .service-box p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+
+  .service-price {
+    font-weight: bold;
+    color: #1fae4a;
+    margin-top: 8px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0f5e2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+  }
+</style>
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
-  <img src="chipworks-logo.png" alt="Chipworks LLC Logo">
-  <h1>Book Online</h1>
-  <p>Schedule your mobile windshield repair or headlight restoration</p>
+  <div class="header-left">
+    <img src="Business-logo.png" alt="Chipworks LLC Logo">
+    <strong>Chipworks LLC</strong>
+  </div>
+
+  <div class="header-center">
+    <a href="#services">Services</a>
+  </div>
+
+  <div class="header-right">
+    <a href="tel:7013359217">Call</a>
+    <a href="sms:7013359217">Text</a>
+  </div>
 </header>
 
-<div class="container">
+<!-- HERO -->
+<section class="hero">
+  <h1>Professional Windshield Rock Chip Repair and Headlight Restoration</h1>
+  <p>Restore the safety of your windshield and improve nighttime driving visibility with certified repair and restoration services.</p>
 
-  <h2>Choose a Service</h2>
+  <div class="cta-buttons">
+    <a href="tel:7013359217">Call Now</a>
+    <a href="sms:7013359217">Text a Photo</a>
+  </div>
+</section>
 
+<!-- BEFORE & AFTER -->
+<div class="before-after">
+  <img src="before-after.png" alt="Before and After Repair">
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="certs">
+  <img src="logo-1.png" alt="Certification 1">
+  <img src="logo.png" alt="Certification 2">
+</div>
+
+<!-- SERVICES TITLE -->
+<h2 id="services" class="services-title">Services</h2>
+
+<p style="text-align:center; font-size:1rem; margin-top:-10px; color:#0f5e2b;">
+  Following NWRD & ROLAGS Standards
+</p>
+
+<!-- SERVICES GRID -->
+<div class="service-container">
+
+  <!-- Rock Chip Repair -->
   <div class="service-box">
-    <h3>Rock Chip Repair — $60</h3>
-    <p>Repair for a single windshield chip smaller than a quarter.</p>
-    <p><strong>Additional chips:</strong> $20 each</p>
-    <a class="book-btn" href="sms:7013359217">Book by Text</a>
+    <h3>Rock Chip Repair</h3>
+    <p>Most chips smaller than a quarter coin are repairable! Using the best resins, we don't just fill — we rebond the glass, restoring its strength to prevent future cracking.</p>
+    <p class="service-price">$60</p>
   </div>
 
+  <!-- Additional Chips -->
   <div class="service-box">
-    <h3>Headlight Restoration — $120</h3>
-    <p>Full restoration to improve clarity, brightness, and nighttime visibility.</p>
-    <a class="book-btn" href="sms:7013359217">Book by Text</a>
+    <h3>Additional Rock Chips</h3>
+    <p>More than one rock chip on the vehicle is only <strong>$20 each</strong> during the same visit.</p>
+    <p class="service-price">$20</p>
   </div>
 
+  <!-- Headlight Restoration -->
   <div class="service-box">
-    <h3>Mobile Service</h3>
-    <p>We come to your home, work, or wherever your vehicle is parked.</p>
-    <p>Most repairs take 15–20 minutes.</p>
-    <a class="book-btn" href="tel:7013359217">Call to Schedule</a>
-  </div>
-
-  <div class="certifications">
-    <img src="delta-kits.png" alt="Delta Kits Certified Technician">
-    <img src="nwrd.png" alt="NWRD Certification">
-    <p>Certified Windshield Repair Technician — Delta Kits & NWRD (Auto Glass Safety Council)</p>
+    <h3>Headlight Restoration</h3>
+    <p>Restore clarity to your vehicle’s headlights with our headlight restoration service, improving visibility and enhancing your car’s appearance.</p>
+    <p class="service-price">$120</p>
   </div>
 
 </div>
 
+<!-- FOOTER -->
 <footer>
-  <p>Chipworks LLC — Mobile Windshield Repair & Headlight Restoration</p>
-  <p>Mandan / Bismarck, North Dakota</p>
+  Chipworks LLC — Mobile Windshield Rock Chip Repair & Headlight Restoration  
+  <br>Mandan / Bismarck, North Dakota
 </footer>
 
 </body>
