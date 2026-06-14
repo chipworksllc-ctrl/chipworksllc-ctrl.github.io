@@ -8,6 +8,7 @@
 <style>
   body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background: #f4f7f4;
     color: #1a1a1a;
@@ -16,11 +17,13 @@
   /* HEADER */
   header {
     background: #0f5e2b;
-    padding: 18px 25px;
+    width: 100%;
+    padding: 18px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
+    box-sizing: border-box;
   }
 
   .header-left {
@@ -35,8 +38,8 @@
 
   .header-right {
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 12px;
   }
 
   .header-right a {
@@ -48,50 +51,60 @@
     text-decoration: none;
     font-size: 0.95rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    white-space: nowrap;
   }
-  header, footer {
-  width: 100%;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-header *, footer * {
-  max-width: 100%;
-}
-  /* Fix social icons disappearing on mobile */
-.header-socials a svg {
-  width: 26px !important;
-  height: 26px !important;
-  min-width: 26px;
-  min-height: 26px;
-  display: block;
-}
-.header-socials a {
-  flex-shrink: 0;
-}
 
-  /* HEADER SOCIAL ICONS */
+  /* SOCIAL ICONS */
   .header-socials {
     display: flex;
     gap: 14px;
     align-items: center;
-    margin-left: 10px;
+  }
+
+  .header-socials a {
+    flex-shrink: 0;
   }
 
   .header-socials a svg {
-    width: 26px;
-    height: 26px;
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px;
+    min-height: 26px;
     fill: white;
     transition: 0.2s ease;
   }
 
   .header-socials a:hover svg {
     fill: #1fae4a;
+  }
+
+  /* MOBILE HEADER FIX */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+      padding: 20px 10px;
+    }
+
+    .header-left {
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .header-left img {
+      height: 50px;
+    }
+
+    .header-right {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .header-socials {
+      justify-content: center;
+      margin-left: 0;
+    }
   }
 
   /* HERO */
@@ -133,7 +146,7 @@ header *, footer * {
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
   }
 
- /* BEFORE & AFTER */
+  /* BEFORE & AFTER */
   .before-after {
     max-width: 900px;
     margin: 50px auto;
@@ -156,173 +169,18 @@ header *, footer * {
     height: 80px;
     margin: 10px 20px;
   }
-  
-  /* SERVICES SECTION */
+
+  /* SERVICES TITLE */
   .services-title {
-  font-size: 2rem;
-  color: #0f5e2b;
-  margin: 60px auto 10px auto;
-  border-bottom: 3px solid #1fae4a;
-  padding-bottom: 5px;
-  opacity: 0.95;
-  max-width: 700px;
-  text-align: center;
-  display: block;
-}
-
-  .service-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    gap: 25px;
-    padding: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .service-box {
-    background: white;
-    padding: 22px;
-    border-radius: 10px;
-    border: 1px solid #dcdcdc;
-    width: 300px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    font-size: 2rem;
+    color: #0f5e2b;
+    margin: 60px auto 10px auto;
+    border-bottom: 3px solid #1fae4a;
+    padding-bottom: 5px;
+    opacity: 0.95;
+    max-width: 700px;
     text-align: center;
+    display: block;
   }
 
-  .service-box img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 15px;
-  }
-
-  .service-price {
-    font-weight: bold;
-    color: #1fae4a;
-    margin-top: 10px;
-    font-size: 1.2rem;
-  }
-
-  /* FOOTER */
-  footer {
-    background: #0f5e2b;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    font-size: 0.95rem;
-  }
-</style>
-</head>
-
-<body>
-
-<!-- HEADER -->
-<header>
-  <div class="header-left">
-    <img src="Business logo.jpeg" alt="Chipworks LLC Logo">
-    <strong>Chipworks LLC — Owner Operator Chris Hauge</strong>
-  </div>
-
-  <div class="header-right">
-    <a href="tel:7013359217">Call</a>
-    <a href="sms:7013359217">Text</a>
-
-    <div class="header-socials">
-
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/profile.php?id=61589426678713" target="_blank">
-        <svg viewBox="0 0 24 24">
-          <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/>
-        </svg>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://instagram.com/chipworksllc?igsh=MTV6cnFjcmM1czc2Zw==" target="_blank">
-        <svg viewBox="0 0 24 24">
-          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3A2.8 2.8 0 1 1 14.8 12 2.8 2.8 0 0 1 12 14.8zm4.8-8.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"/>
-        </svg>
-      </a>
-
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@chipworksllcnd" target="_blank">
-        <svg viewBox="0 0 24 24">
-          <path d="M21 8.1c-1.7 0-3.3-.6-4.6-1.7v8.2a6.4 6.4 0 1 1-5.5-6.3v3.3a3.1 3.1 0 1 0 2.2 3V2h3.3c.2 1.6 1.5 2.9 3.1 3.1v3z"/>
-        </svg>
-      </a>
-
-    </div>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <h1>Professional Windshield Rock Chip Repair & Headlight Restoration</h1>
-  <p>Restore clarity and safety to your drive with fast, affordable windshield chip and crack repair — stopping damage before it spreads with same‑day service available. Plus, boost nighttime visibility and enhance your vehicle’s appearance with professional headlight restoration, a cost‑effective way to improve safety and avoid expensive replacements.</p>
-
-  <div class="cta-buttons">
-    <a href="tel:7013359217">Call Now</a>
-    <a href="sms:7013359217">Text a Photo</a>
-  </div>
-</section>
-
-<!-- BEFORE & AFTER -->
-<div class="before-after">
-  <img src="Before and after.png" alt="Before and After Repair">
-</div>
-
-<!-- CERTIFICATIONS -->
-<div class="certs">
-  <img src="logo-1.webp" alt="Certification 1">
-  <img src="logo.png" alt="Certification 2">
-</div>
-
-<!-- SERVICES TITLE -->
-<h2 id="services" class="services-title">Services</h2>
-
-
-<p style="text-align:center; font-size:1rem; margin-top:-10px; color:#0f5e2b;">
-  We’re built on integrity, real expertise, and true professionalism. Your safety comes first, which is why we follow the official ROLAGS and NWRD standards for windshield repair. We’re also certified through Delta Kits — one of the most trusted names in the industry — ensuring every repair is done correctly using proven methods and top‑quality materials.
-</p>
-
-<!-- SERVICES GRID -->
-<div class="service-container">
-
-  <div class="service-box">
-    <h3>Rock Chip Repair</h3>
-    <p>Most chips smaller than a quarter can be repaired. We use high‑quality resins that don’t just fill the chip — they bond the glass back together, restoring strength and helping prevent cracks from spreading. This includes star breaks, bullseyes, and combination chips, all repaired quickly to keep your windshield safe and looking great.</p>
-    <img src="Business Suite_creation_999341176158779.jpeg" alt="Rock Chip Repair">
-    <p class="service-price">$60</p>
-  </div>
-
-  <div class="service-box">
-    <h3>Additional Rock Chips</h3>
-    <p>Have more than one chip? No problem. After your first repair, each additional rock chip can be fixed at a discounted rate. Repairing every chip now helps prevent future cracking, keeps your windshield strong, and saves you money compared to replacing the entire glass. <strong>$20</strong> during the same visit.</p>
-    <img src="20260525_130020.jpg" alt="Additional Chips">
-    <p class="service-price">$20</p>
-  </div>
-
-  <div class="service-box">
-    <h3>Headlight Restoration</h3>
-    <p>Over time, headlights become cloudy, yellow, and dim — reducing how far you can see at night and how well others can see you. Our headlight restoration service brings them back to a clear, like‑new shine, improving nighttime visibility, boosting safety, and instantly upgrading your vehicle’s appearance. It’s an affordable alternative to expensive headlight replacements and makes a huge difference in both safety and style.</p>
-    <img src="20260610_125122.jpg" alt="Headlight Restoration">
-    <p class="service-price">$120</p>
-  </div>
-
-  <div class="service-box">
-    <h3>Fleet Service </h3>
-    <p>Keep your fleet safe, sharp, and on the road with our dependable mobile repair service. We provide fast windshield chip repair for work trucks, service vehicles, and company cars. No matter how many chips each vehicle has, we’ll take care of them all — helping you reduce downtime, improve driver safety, and avoid costly replacements. We come to you, making maintenance simple, efficient, and hassle‑free for your entire fleet.</p>
-    <img src="BCO.c607befd-b3eb-406e-8b5b-d5a3fdfb43f1.png" alt="Headlight Restoration">
-    <p class="service-price">$40</p>
-</div>
-
-</div> <!-- end of .service-container -->
- 
-<!-- FOOTER -->
-<footer>
-  Chipworks LLC — Mobile Windshield Rock Chip Repair & Headlight Restoration  
-  <br>Mandan / Bismarck, North Dakota
-</footer>
-
-</body>
-</html>
+  /* SERVICES GRID */
